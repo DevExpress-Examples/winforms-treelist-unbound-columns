@@ -1,5 +1,7 @@
-﻿Namespace TreeList_UnboundDataViaEvent
-    Partial Public Class Form1
+Namespace TreeList_UnboundDataViaEvent
+
+    Partial Class Form1
+
         ''' <summary>
         ''' Required designer variable.
         ''' </summary>
@@ -10,14 +12,14 @@
         ''' </summary>
         ''' <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         Protected Overrides Sub Dispose(ByVal disposing As Boolean)
-            If disposing AndAlso (components IsNot Nothing) Then
-                components.Dispose()
+            If disposing AndAlso (Me.components IsNot Nothing) Then
+                Me.components.Dispose()
             End If
+
             MyBase.Dispose(disposing)
         End Sub
 
-        #Region "Windows Form Designer generated code"
-
+#Region "Windows Form Designer generated code"
         ''' <summary>
         ''' Required method for Designer support - do not modify
         ''' the contents of this method with the code editor.
@@ -31,14 +33,14 @@
             Me.tlBandThisYear = New DevExpress.XtraTreeList.Columns.TreeListBand()
             Me.colMarchSales = New DevExpress.XtraTreeList.Columns.TreeListColumn()
             Me.colID = New DevExpress.XtraTreeList.Columns.TreeListColumn()
-            DirectCast(Me.treeList1, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((Me.treeList1), System.ComponentModel.ISupportInitialize).BeginInit()
             Me.SuspendLayout()
             ' 
             ' treeList1
             ' 
-            Me.treeList1.Bands.AddRange(New DevExpress.XtraTreeList.Columns.TreeListBand() { Me.tlMain, Me.tlBandPrevYear, Me.tlBandThisYear})
-            Me.treeList1.Columns.AddRange(New DevExpress.XtraTreeList.Columns.TreeListColumn() { Me.colRegion, Me.colMarchSales, Me.colMarchSalesPrev, Me.colID})
-            Me.treeList1.Cursor = System.Windows.Forms.Cursors.Default
+            Me.treeList1.Bands.AddRange(New DevExpress.XtraTreeList.Columns.TreeListBand() {Me.tlMain, Me.tlBandPrevYear, Me.tlBandThisYear})
+            Me.treeList1.Columns.AddRange(New DevExpress.XtraTreeList.Columns.TreeListColumn() {Me.colRegion, Me.colMarchSales, Me.colMarchSalesPrev, Me.colID})
+            Me.treeList1.Cursor = System.Windows.Forms.Cursors.[Default]
             Me.treeList1.Dock = System.Windows.Forms.DockStyle.Fill
             Me.treeList1.Location = New System.Drawing.Point(0, 0)
             Me.treeList1.Name = "treeList1"
@@ -109,20 +111,25 @@
             Me.Controls.Add(Me.treeList1)
             Me.Name = "Form1"
             Me.Text = "Form1"
-            DirectCast(Me.treeList1, System.ComponentModel.ISupportInitialize).EndInit()
+            CType((Me.treeList1), System.ComponentModel.ISupportInitialize).EndInit()
             Me.ResumeLayout(False)
-
         End Sub
 
-        #End Region
-
+#End Region
         Private treeList1 As DevExpress.XtraTreeList.TreeList
+
         Private colRegion As DevExpress.XtraTreeList.Columns.TreeListColumn
+
         Private colMarchSales As DevExpress.XtraTreeList.Columns.TreeListColumn
+
         Private colMarchSalesPrev As DevExpress.XtraTreeList.Columns.TreeListColumn
+
         Private tlMain As DevExpress.XtraTreeList.Columns.TreeListBand
+
         Private tlBandPrevYear As DevExpress.XtraTreeList.Columns.TreeListBand
+
         Private tlBandThisYear As DevExpress.XtraTreeList.Columns.TreeListBand
+
         Private colID As DevExpress.XtraTreeList.Columns.TreeListColumn
     End Class
 End Namespace
